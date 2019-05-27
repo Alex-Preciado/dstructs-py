@@ -16,7 +16,16 @@ class Stack:
 	
 	
 	def pop(self):
-		pass
+		'''
+		Removes and returns the last item from the list which is the top item of the Stack
+		
+		Runtime for this method is O(1)
+		'''
+		
+		if self.items:
+			return self.items.pop()
+		else:
+			return None
 		
 	def peek(self):
 		pass
