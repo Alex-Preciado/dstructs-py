@@ -12,3 +12,9 @@ class Stack:
 		
 	def peek(self):
 		pass
+		
+	def size(self):
+		pass
+	
+	def is_empty(self):
+		pass
