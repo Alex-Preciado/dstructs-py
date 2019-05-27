@@ -5,7 +5,15 @@ class Stack:
 		self.items = []
 		
 	def push(self, item):
-		pass
+		'''
+		Accepts and item as a paremeter and appends it to the end of the list
+		
+		Returns nothing
+		
+		Runtime for this method is O(1)
+		'''
+		self.items.append(item)	
+	
 	
 	def pop(self):
 		pass
