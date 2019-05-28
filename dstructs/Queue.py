@@ -9,13 +9,20 @@ class Queue:
 			The runtime of this method is O(n) or linear time since inserting an item in the zeroth position of a list forces all other items to move to the next position.
 		"""
 		self.items.insert(0,item)
-		
+	
+	
 	def dequeue(self):
+	"""
+		Returns and remotes the front-most item of the Queue which is represented by the last item in the list.
+		
+		The runtime of this method is O(1).
+	"""
 		if self.items:
 			self.items.pop()
 		else:
 			return none
-		
+	
+	
 	def peek(self):
 		
 		
