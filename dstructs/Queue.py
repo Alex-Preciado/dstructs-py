@@ -12,11 +12,11 @@ class Queue:
 	
 	
 	def dequeue(self):
-	"""
-		Returns and remotes the front-most item of the Queue which is represented by the last item in the list.
-		
-		The runtime of this method is O(1).
-	"""
+		"""
+			Returns and remotes the front-most item of the Queue which is represented by the last item in the list.
+			
+			The runtime of this method is O(1).
+		"""
 		if self.items:
 			self.items.pop()
 		else:
@@ -24,7 +24,15 @@ class Queue:
 	
 	
 	def peek(self):
-		
+		"""
+			Return the last item on the list representing the front-most item in the Queue
+			
+			The runtime for this method is O(1)
+		"""
+		if self.items:
+			return self.items[-1]
+		else:
+			return None
 		
 	def size(self):
 		pass
