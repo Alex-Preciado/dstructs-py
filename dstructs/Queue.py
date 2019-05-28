@@ -33,9 +33,21 @@ class Queue:
 			return self.items[-1]
 		else:
 			return None
-		
+	
+	
 	def size(self):
-		pass
+		"""
+			Method to return the lenght of the list representing the stack
+			
+			Runtime for this method is O(1)
+		"""
+		return len(self.items)
+		
 		
 	def is_empty(self):
-		pass
+		"""
+			Method to check if the stack list is empty
+			
+			Runtime for this method is O(1)
+		"""	
+		return self.items == []
