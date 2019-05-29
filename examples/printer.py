@@ -47,9 +47,22 @@ class Job:
 class Printer:
 	
 	def __init__(self):
-		pass
+		self.current_job = None
 		
-	def get_job(self):
+	def get_job(self, printer_queue):
+		if printer_queue.is_empty():
+			print("No more jobs to print!")
+		else:
+			printer_queue.dequeue()
+		
+	def print_job(self, job):
+		while job.pages > 0:
+			job.print_page()
+			
+		if job.check_complete:
+			print("Job Printed!")
+		
+		
 		
 		
 		
