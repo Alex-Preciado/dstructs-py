@@ -20,7 +20,7 @@ class Queue:
 		if self.items:
 			self.items.pop()
 		else:
-			return none
+			return None
 	
 	
 	def peek(self):
